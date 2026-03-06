@@ -1,2 +1,2 @@
 # 'OurWebsite'
-This is our website over at warebyte! web link: warebyte.club and we are a Hack Club Club..... yeah that doesnt sound right
+welcome to our website over at warebyte! Over here you shall see many things our members have done. This includes projects, portfolios, awards and possibly more!
