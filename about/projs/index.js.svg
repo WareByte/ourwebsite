@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <foreignObject width="100%" height="100%">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+      <head><script><![CDATA[(function(){var NS="http://www.w3.org/1999/xhtml";var fo=document.querySelector("foreignObject");var root=fo.firstElementChild;var head=root.querySelector("head");var body=root.querySelector("body");var _ce=document.createElement.bind(document);var _cns=document.createElementNS.bind(document);Object.defineProperty(document,"head",{get:function(){return head},configurable:true});Object.defineProperty(document,"body",{get:function(){return body},configurable:true});Object.defineProperty(document,"documentElement",{get:function(){return root},configurable:true});document.createElement=function(t,o){return typeof t==="string"?_cns(NS,t,o):_ce(t,o)};document.createElementNS=function(ns,q,o){return(!ns||ns===NS)?_cns(NS,q,o):_cns(ns,q,o)};if(!location.hash)history.replaceState(history.state,"","#/");})();]]></script><style><![CDATA[html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:#0d0d0d}foreignObject{overflow:visible}]]></style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <title>Student Learning Portal</title>
+    <meta name="description" content="Student learning hub for homework, study guides, reading logs, and classroom notes. Organized workspace for schoolwork." />
+    <meta name="keywords" content="homework, study guide, classroom notes, student workspace, reading log, essay draft, vocabulary list, honors course, lecture notes" />
+    <meta name="author" content="Learning Portal" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+    <meta name="googlebot" content="noindex,nofollow" />
+    <meta name="bingbot" content="noindex,nofollow" />
+    <meta name="rating" content="general" />
+    <meta name="content-type" content="education" />
+    <meta property="og:title" content="Student Learning Portal" />
+    <meta property="og:description" content="Classroom workspace" />
+    <meta property="og:site_name" content="Learning Portal" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Student Learning Portal" />
+    <meta name="twitter:description" content="Classroom workspace" />
+    <link id="kb-favicon" rel="icon" type="image/x-icon" href="./koopbin.ico" />
+    
+    
+  <script type="module" crossorigin="anonymous" src="./assets/index-CfNCFVlG.js"></script>
+  <link rel="modulepreload" crossorigin="anonymous" href="./assets/_commonjsHelpers-Dvrxj_Zk.js" />
+  <link rel="stylesheet" crossorigin="anonymous" href="./assets/index-Ddwk2syr.css" />
+</head>
+<body>
+    <noscript>
+      <p style="font-family: system-ui, sans-serif; padding: 2rem; color: #444;">
+        This learning portal requires JavaScript. Please enable it in your browser settings.
+      </p>
+    </noscript>
+    <div id="root"></div>
+</body>
+    </html>
+  </foreignObject>
+</svg>
