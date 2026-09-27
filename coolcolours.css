@@ -1,91 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-body {
-    margin: 0;
-    padding-top: 50px;
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    background-color: #df7f7f;
-    color: #000;
-    line-height: 1.6;
+/* ai css slop :( i did lwk want hackclub style so idk lol */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --bg-top: #16131f;
+  --bg-bottom: #21192d;
+  --surface: rgba(14, 16, 27, 0.85);
+  --surface-soft: rgba(26, 30, 45, 0.7);
+  --text: #f7f7fb;
+  --muted: #c6c9d8;
+  --accent-red: #ec3750;
+  --accent-orange: #ff8c37;
+  --accent-yellow: #f1c40f;
+  --accent-green: #38d675;
+  --accent-blue: #4dabff;
 }
-
-.bar-on-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-color: #f2acac;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.hero {
-    height: calc(100vh - 50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: 500;
-}
-.btn-secondary {
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    padding: 10px 22px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-hr {
-height: 4px;
-border: none;
-background-color: #000000;
-}
-
-.topbar {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
+* {
   box-sizing: border-box;
-  z-index: 2;
 }
-
-.topbar p {
+body {
   margin: 0;
+  color: var(--text);
+  font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 50% -20%, #2f2a42 0%, var(--bg-top) 35%, var(--bg-bottom) 100%);
+  min-height: 100vh;
+}
+a {
+  color: inherit;
+}
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.idkthemiddlebit {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(8px);
+  background: rgba(16, 15, 23, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.thebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #fff;
+}
+.logo-badge {
+  background: var(--accent-red);
+  color: #fff;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.8rem;
+  transform: rotate(-7deg);
+  box-shadow: 0 8px 22px rgba(236, 55, 80, 0.35);
+}
+.linkstopbar {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.linkstopbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f4f5fa;
+  opacity: 0.92;
+}
+.linkstopbar a:hover,
+.linkstopbar a[aria-current="page"] {
+  color: #fff;
+  opacity: 1;
+}
+.button {
+  border: 0;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.65rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-primary {
+  background: #fff;
+  color: #131520;
+}
+.button-accent {
+  background: var(--accent-red);
+  color: #fff;
+}
+main {
+  flex: 1;
+}
+.hero {
+  padding: 3.8rem 0 4.6rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.topbar .os-name {
-  font-weight: 700;
-  cursor: pointer;
+.hero::before {
+  content: "";
+  position: absolute;
+  border-radius: px;
+  width: 160px;
+  aspect-ratio: 4 / 5;
+  background-image: url("./images/Warebyte.png");
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center;  /* Keeps the image centered */
+  background-size: contain;     /* Zooms out to reveal the whole image */
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 22px;
+  width: 160px;
+  aspect-ratio: 4 / 5;
+  background-image: url("./images/hackclub.png");
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center;  /* Keeps the image centered */
+  background-size: contain;     /* Zooms out to reveal the whole image */
+}
+.hero::before {
+  left: 42px;
+  top: 110px;
+}
+.hero::after {
+  right: 42px;
+  top: 130px;
+}
+.middle {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-txt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+.main-propaganda {
+  margin: 0.65rem 0 0;
+  font-size: clamp(2.6rem, 7vw, 5.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.rainbow {
+  background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow), var(--accent-green), var(--accent-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.main-detail {
+  margin: 1rem auto 0;
+  color: #f3f4fb;
+  max-width: 52ch;
+  font-size: 1.16rem;
+}
+.join-bar {
+  margin: 1.6rem auto 0;
+  max-width: 640px;
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.45rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface-soft);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.card h2,
+.card h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1.35rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+  color: #d6daea;
+}
+.join-bar input {
+  flex: 1;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.join-note {
+  margin-top: 0.8rem;
+  color: #d1d5e4;
+  font-style: italic;
+}
+.page {
+  padding: 3rem 0 4rem;
+}
+.page-header {
+  margin-bottom: 1.4rem;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.page-header p {
+  margin: 0.65rem 0 0;
+  max-width: 60ch;
+  color: var(--muted);
+}
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  color: var(--muted);
+  padding: 1.3rem 0 2.4rem;
+  text-align: center;
+}
+@media (max-width: 960px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 740px) {
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0.2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  .join-bar {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
