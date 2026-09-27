@@ -116,7 +116,7 @@ main {
   border-radius: px;
   width: 160px;
   aspect-ratio: 4 / 5;
-  background-image: url("./images/Warebyte.png");
+  background-image: url("/images/Warebyte.png");
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center;  /* Keeps the image centered */
   background-size: contain;     /* Zooms out to reveal the whole image */
@@ -127,7 +127,7 @@ main {
   border-radius: 22px;
   width: 160px;
   aspect-ratio: 4 / 5;
-  background-image: url("./images/hackclub.png");
+  background-image: url("/images/hackclub.png");
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center;  /* Keeps the image centered */
   background-size: contain;     /* Zooms out to reveal the whole image */
